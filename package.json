@@ -1,14 +1,18 @@
 {
   "name": "01-github-explorer",
+  "homepage": "https://KaTSu113.github.io/dtmoney/",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
     "dev": "webpack serve",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "build": "cross-env NODE_ENV=production webpack",
     "test": "jest --watchAll"
   },
   "dependencies": {
+    "gh-pages": "^3.2.3",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-icons": "^4.2.0"
